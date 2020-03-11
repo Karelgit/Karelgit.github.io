@@ -82,7 +82,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/02/%E2%80%9C%E6%96%B0%E6%96%87%E7%AB%A0%E2%80%9D/">CentOS7下Tomcat启动慢的原因及解决方案</a>
+      <a class="article-title" href="/2017/12/02/%E2%80%9C%E6%96%B0%E6%96%87%E7%AB%A0%E2%80%9D/">测试代码编写</a>
     </h1>
   
 
@@ -91,7 +91,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>##开始第一个博客的熟悉</p>
-
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">push</span><span class="params">(Request request, Task task)</span> </span>&#123;</span><br><span class="line">       reentrantLock.lock();</span><br><span class="line">       String domain = <span class="keyword">null</span>;</span><br><span class="line">       <span class="keyword">try</span> &#123;</span><br><span class="line">           <span class="keyword">if</span>(request.getUrl().contains(<span class="string">"http://bbs.tongren.gov.cn/"</span>) == <span class="keyword">false</span>)    &#123;</span><br><span class="line">               <span class="comment">//request的header带有层数参数，如"0"</span></span><br><span class="line">               String depth = request.getHeaders().get(<span class="string">"depth"</span>);</span><br><span class="line">               <span class="keyword">if</span>(depth ==<span class="keyword">null</span>)    &#123;</span><br><span class="line">                   depth = <span class="string">"0"</span>;</span><br><span class="line">                   domain =GetDomain.getDomain(request.getUrl());</span><br><span class="line">               &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                   domain = request.getHeaders().get(<span class="string">"domain"</span>);</span><br><span class="line">               &#125;</span><br><span class="line">               <span class="keyword">if</span>(<span class="keyword">null</span> !=  domain )    &#123;</span><br><span class="line">                   String key = <span class="string">"queue_"</span>+ task.getUUID()+<span class="string">"_"</span>+depth;</span><br><span class="line">                   JedisUtil.sadd(key, domain+<span class="string">"|"</span>+request.getUrl());</span><br><span class="line">                   <span class="comment">//加入key值过期时间24小时</span></span><br><span class="line">                   JedisUtil.expire(key,<span class="number">24</span>*<span class="number">3600</span>);</span><br><span class="line">               &#125;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">           e.printStackTrace();</span><br><span class="line">       &#125;<span class="keyword">finally</span> &#123;</span><br><span class="line">           reentrantLock.unlock();</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
@@ -159,7 +159,7 @@
       <ul>
         
           <li>
-            <a href="/2017/12/02/%E2%80%9C%E6%96%B0%E6%96%87%E7%AB%A0%E2%80%9D/">CentOS7下Tomcat启动慢的原因及解决方案</a>
+            <a href="/2017/12/02/%E2%80%9C%E6%96%B0%E6%96%87%E7%AB%A0%E2%80%9D/">测试代码编写</a>
           </li>
         
       </ul>
