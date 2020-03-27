@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>a1</title>
-    <url>/2020/03/27/a1/</url>
-    <content><![CDATA[<p><img src="/2020/03/27/a1/111.png" alt></p>
+    <title>灵活网关SpringCloud Gateway</title>
+    <url>/2020/03/26/spring-cloud-gateway/</url>
+    <content><![CDATA[<p>##灵活网关SpringCloud Gateway</p>
+<p>可能没人习惯我们这种，直接上代码和测试结果的，想在粗暴的开场之后进行细腻的展示，其实稍显困难，但是，就这样展示吧。测试张图：</p>
 ]]></content>
+      <categories>
+        <category>SpringCloud</category>
+      </categories>
+      <tags>
+        <tag>SpringCloud-Gateway</tag>
+        <tag>服务端编程</tag>
+      </tags>
   </entry>
 </search>
