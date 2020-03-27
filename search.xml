@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>《娱乐至死》读书笔记</title>
+    <url>/2020/03/27/%E3%80%8A%E5%A8%B1%E4%B9%90%E8%87%B3%E6%AD%BB%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+      <categories>
+        <category>读书</category>
+      </categories>
+      <tags>
+        <tag>《娱乐至死》</tag>
+        <tag>读书</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>灵活网关SpringCloud Gateway</title>
     <url>/2020/03/26/spring-cloud-gateway/</url>
     <content><![CDATA[<h3 id="灵活网关SpringCloud-Gateway"><a class="header-anchor" href="#灵活网关SpringCloud-Gateway">¶</a>灵活网关SpringCloud Gateway</h3>
