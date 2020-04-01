@@ -1,29 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>几种分布式锁的集中实现</title>
-    <url>/2020/03/28/%E5%87%A0%E7%A7%8D%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%E7%9A%84%E9%9B%86%E4%B8%AD%E5%AE%9E%E7%8E%B0/</url>
-    <content><![CDATA[<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
-  </entry>
-  <entry>
     <title>做了个梦</title>
     <url>/2020/03/28/dreamviewer/</url>
     <content><![CDATA[<blockquote>
@@ -86,43 +63,6 @@
       </categories>
       <tags>
         <tag>读书</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>灵活网关SpringCloud Gateway</title>
-    <url>/2020/03/26/spring-cloud-gateway/</url>
-    <content><![CDATA[<h3 id="灵活网关"><a class="header-anchor" href="#灵活网关">¶</a>灵活网关</h3>
-<blockquote>
-<pre><code>  在使用微服务管理服务的工程，我们抽象出下面的权限管理，加在通过网关访问到业务代码API之前，下图具体介绍控制逻辑，包含[lua脚本](&lt;https://redisbook.readthedocs.io/en/latest/feature/scripting.html&gt;)进行对访问进行令牌的控制，如果不知道令牌桶的概念，可以先看：[https://www.jianshu.com/p/864ddda9288f]()，下面进入流程
-</code></pre>
-</blockquote>
-<p><img src="/Users/macbookpro/IdeaProjects/hexo/source/_drafts/spring-cloud-gateway/main-frame.png" alt="项目访问控制"></p>
-<p>​</p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>]]></content>
-      <categories>
-        <category>SpringCloud</category>
-      </categories>
-      <tags>
-        <tag>SpringCloud-Gateway</tag>
-        <tag>服务端编程</tag>
       </tags>
   </entry>
 </search>
