@@ -91,8 +91,12 @@
   <entry>
     <title>灵活网关SpringCloud Gateway</title>
     <url>/2020/03/26/spring-cloud-gateway/</url>
-    <content><![CDATA[<h3 id="灵活网关SpringCloud-Gateway"><a class="header-anchor" href="#灵活网关SpringCloud-Gateway">¶</a>灵活网关SpringCloud Gateway</h3>
-<p>可能没人习惯我们这种，直接上代码和测试结果的，想在粗暴的开场之后进行细腻的展示，其实稍显困难，但是，就这样展示吧。</p>
+    <content><![CDATA[<h3 id="灵活网关"><a class="header-anchor" href="#灵活网关">¶</a>灵活网关</h3>
+<blockquote>
+<pre><code>  在使用微服务管理服务的工程，我们抽象出下面的权限管理，加在通过网关访问到业务代码API之前，下图具体介绍控制逻辑，包含[lua脚本](&lt;https://redisbook.readthedocs.io/en/latest/feature/scripting.html&gt;)进行对访问进行令牌的控制，如果不知道令牌桶的概念，可以先看：[https://www.jianshu.com/p/864ddda9288f]()，下面进入流程
+</code></pre>
+</blockquote>
+<p><img src="/Users/macbookpro/IdeaProjects/hexo/source/_drafts/spring-cloud-gateway/main-frame.png" alt="项目访问控制"></p>
 <p>​</p>
 <script>
         document.querySelectorAll('.github-emoji')
