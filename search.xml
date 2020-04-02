@@ -65,4 +65,42 @@
         <tag>读书</tag>
       </tags>
   </entry>
+  <entry>
+    <title>灵活网关SpringCloud Gateway</title>
+    <url>/2020/03/26/spring-cloud-gateway/</url>
+    <content><![CDATA[<h3 id="灵活网关"><a class="header-anchor" href="#灵活网关">¶</a>灵活网关</h3>
+<p>​		在使用网关进行微服务管理的工程中，我们编写了包含鉴权、限流的解决方案，加在访问到业务代码API之前，下图具体介绍控制逻辑，包含<a href="https://redisbook.readthedocs.io/en/latest/feature/scripting.html" target="_blank" rel="noopener">lua脚本</a>进行对访问进行令牌的控制，如果不知道令牌桶的概念，可以先看：<a href="">https://www.jianshu.com/p/864ddda9288f</a>，下面进入流程</p>
+<p><img src="/Users/macbookpro/IdeaProjects/hexo/source/_drafts/spring-cloud-gateway/main-frame.png" alt="项目访问控制"></p>
+<p>​				                											<em>图1 网关控制流程图</em></p>
+<p>​      SpringCloud 的异常处理不同于SpringMVC或者SpringBoot下的全局异常处理因为底层的处理器不同，代码层表现为继承的类不同，SpringCloud需要继承DefaultErrorWebExceptionHandler进行异常处理,，SpringMVC和SpringBoot通过@ControllerAdvice<code>和</code>@ExceptionHandler处理不同的自定义异常处理逻辑。</p>
+<p>​		展示一下项目的结构：</p>
+<p><img src="/Users/macbookpro/IdeaProjects/hexo/source/_drafts/spring-cloud-gateway/project-layout.png" alt="project-layout"></p>
+<figure class="highlight plain"><table><tbody><tr><td class="code"><pre><span class="line">`{% img [class names] /path/to/image [width] [height] '"title text" "alt text"' %}`</span><br></pre></td></tr></tbody></table></figure>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+      <categories>
+        <category>SpringCloud</category>
+      </categories>
+      <tags>
+        <tag>SpringCloud-Gateway</tag>
+        <tag>服务端编程</tag>
+      </tags>
+  </entry>
 </search>
