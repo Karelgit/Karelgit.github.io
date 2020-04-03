@@ -72,7 +72,7 @@
 <p>​		在使用网关进行微服务管理的工程中，我们编写了包含鉴权、限流的解决方案，加在访问到业务代码API之前，下面进入流程：</p>
 <p><img src="/2020/03/26/spring-cloud-gateway/main-frame.png" alt="项目访问控制"></p>
 <center>网关控制流程图</center>
-<p>​     <a id="more"></a> SpringCloud 的异常处理不同于SpringMVC或者SpringBoot下的全局异常处理,因为底层的处理器不同,具体代码层表现为继承的类不同，SpringCloud需要继承DefaultErrorWebExceptionHandler进行异常处理,，SpringMVC和SpringBoot通过@ControllerAdvice<code>和</code>@ExceptionHandler处理不同的自定义异常处理逻辑。</p>
+<p>​     <a id="more"></a>SpringCloud 的异常处理不同于SpringMVC或者SpringBoot下的全局异常处理,因为底层的处理器不同,具体代码层表现为继承的类不同，SpringCloud需要继承DefaultErrorWebExceptionHandler进行异常处理,，SpringMVC和SpringBoot通过@ControllerAdvice<code>和</code>@ExceptionHandler处理不同的自定义异常处理逻辑。</p>
 <img src="/2020/03/26/spring-cloud-gateway/project-layout.png" class="project-layout" width="300" height="40">
 <center>项目结构图</center>
 <h4 id="全局异常处理："><a class="header-anchor" href="#全局异常处理：">¶</a>全局异常处理：</h4>
