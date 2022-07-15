@@ -375,7 +375,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2021/04/19/git%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6%E6%81%A2%E5%A4%8D%E4%B8%A2%E5%A4%B1%E6%95%B0%E6%8D%AE/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2021/04/19/git%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6%E6%81%A2%E5%A4%8D%E4%B8%A2%E5%A4%B1%E6%95%B0%E6%8D%AE/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/04/19/git%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%96%87%E4%BB%B6%E6%81%A2%E5%A4%8D%E4%B8%A2%E5%A4%B1%E6%95%B0%E6%8D%AE/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -491,11 +491,7 @@
 
   
     <div class="comments" id="comments">
-      
-        <div id="gitment-container"></div>
-      
     </div>
-
   
 
 
@@ -789,45 +785,30 @@
 
 
 
-<!-- LOCAL: You can save these files to your site and update links -->
-    
-        
-        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
-        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
-    
-<!-- END LOCAL -->
-
-    
-
-    
-      <script type="text/javascript">
-      function renderGitment(){
-        var gitment = new Gitmint({
-            id: window.location.pathname,
-            owner: 'Karelgit',
-            repo: 'git@github.com:Karelgit/russan-comment.git',
-            
-            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-            
-            oauth: {
-            
-            
-                client_secret: '167ba738f48f19c9de84e626c4d7ebcf0776804c',
-            
-                client_id: 'b7cb6789695f12a73589'
-            }});
-        gitment.render('gitment-container');
-      }
-
-      
-      renderGitment();
-      
-      </script>
-    
 
 
 
-
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: true,
+        appId: 'k5BH3xlRBUr38ElbwzE7Qpzz-gzGzoHsz',
+        appKey: 'lDxxfhr6Rt45b7osnELwF3SX',
+        placeholder: '评论区（如果期待指定回复，可填写上面的昵称和你的邮箱）',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
